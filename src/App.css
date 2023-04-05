@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.banner {
+  margin-top: 0px;
+  background-color: yellow;
+  height: 300px;
+}
+
+.b-head {
+  padding-top: 70px;
+  font-size: 70px;
+}
+
+.product-list {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+
+@media(min-width:500px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(min-width:1100px) {
+  .product-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.product-cards {
+  margin: 50px 50px;
+}
+
+.product-card {
+  height: 470px;
+  width: 300px;
+}
+
+.p-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
